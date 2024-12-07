@@ -23,8 +23,8 @@ The system follows these main steps:
 ### `chunker.py`
 - **Purpose**: Splits the input text into overlapping chunks to improve retrieval granularity.
 - **Work Flow**:
-  - The text is split into chunks of a specified size. By default, each chunk contains 1000 words.
-  - Overlapping chunks are created to ensure context continuity. By default, the overlap is 50 words.
+  - The text is split into chunks of a specified size. By default, each chunk contains 1000 characters.
+  - Overlapping chunks are created to ensure context continuity. By default, the overlap is 50 characters.
   
 ### `retriever.py`
 - **Purpose**: Finds the most relevant chunks for a given query. By default, BM25 and semantic search are used in combination and 10 chunks are retrieved.
